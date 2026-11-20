@@ -1,0 +1,11 @@
+project_id = "spin-platform"
+
+[functions.spin-submit]
+verify_jwt = true
+[functions.track]
+verify_jwt = true
+[functions.admin-api]
+verify_jwt = true
+# The backup function authenticates itself: admin JWT, or the x-cron-secret header used by Supabase Cron.
+[functions.backup]
+verify_jwt = false
