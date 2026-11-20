@@ -1,0 +1,92 @@
+{
+  "common": {
+    "back": "Back", "add": "Add", "remove": "Remove", "edit": "Edit", "save": "Save changes", "cancel": "Cancel", "delete": "Delete",
+    "clear": "Clear all", "copy": "Copy", "copied": "Copied", "reset": "Reset", "regenerate": "Regenerate", "close": "Close",
+    "loading": "Loading…", "search": "Search", "noData": "Nothing here yet", "confirm": "Confirm", "export": "Export", "download": "Download",
+    "print": "Print", "language": "Language", "theme": "Theme", "light": "Light", "dark": "Dark", "all": "All", "details": "Details",
+    "status": "Status", "date": "Date", "type": "Type", "from": "From", "to": "To", "page": "Page", "of": "of", "next": "Next",
+    "previous": "Previous", "retry": "Try again", "saved": "Saved", "failed": "Failed", "yes": "Yes", "no": "No", "enabled": "Enabled",
+    "disabled": "Disabled", "open": "Open", "on": "On", "off": "Off", "restore": "Restore", "create": "Create", "verify": "Verify"
+  },
+  "nav": { "home": "Home", "tools": "Spin Tools", "history": "History" },
+  "hero": { "title": "Make Every Choice Random.", "subtitle": "Spin, select, match, and create groups effortlessly.", "cta": "Start Spinning" },
+  "tools": {
+    "wheel": { "name": "Random Wheel", "desc": "Spin to pick a winner" },
+    "teams": { "name": "Team Matching", "desc": "Pair teams at random" },
+    "groups": { "name": "Group Generator", "desc": "Split people into groups" },
+    "groupspin": { "name": "Group-by-Group Spin", "desc": "Reveal groups one at a time" },
+    "select": { "name": "Random Person", "desc": "Pick people from a list" },
+    "disabled": "This tool is turned off right now."
+  },
+  "input": {
+    "placeholder": "Add a name and press Enter", "paste": "Paste names — one per line or separated by commas", "addAll": "Add names",
+    "importCsv": "Import CSV", "count_one": "{{count}} participant", "count_other": "{{count}} participants", "duplicates": "{{count}} duplicate(s) removed",
+    "tooLong": "Some names were shortened to {{max}} characters", "limit": "Limit reached: {{max}} participants", "empty": "Add names to get started",
+    "editPrompt": "Edit name", "imported": "{{count}} names imported", "sample": "Add sample names"
+  },
+  "wheel": {
+    "spin": "Spin", "spinning": "Spinning…", "winners": "Winners", "removeWinners": "Remove winners from the wheel", "keepWinners": "Keep winners on the wheel",
+    "sound": "Sound", "fullscreen": "Fullscreen", "exitFullscreen": "Exit fullscreen", "winner": "Winner", "needTwo": "Add at least 2 names to spin",
+    "spinAgain": "Spin again", "resetWheel": "Reset wheel"
+  },
+  "teams": {
+    "perMatch": "Teams per match", "oneVsOne": "1 vs 1", "nWay": "{{n}} teams", "generate": "Match teams", "revealOne": "Reveal one by one",
+    "revealAll": "Reveal all", "next": "Reveal next", "needTwo": "Add at least 2 teams", "placeholder": "Add a team and press Enter", "vs": "vs"
+  },
+  "groups": {
+    "by": "Divide by", "size": "Group size", "count": "Number of groups", "value": "Value", "generate": "Generate groups", "members": "members", "group": "Group",
+    "needOne": "Add at least 1 name", "summary": "{{groups}} groups · {{people}} people"
+  },
+  "groupspin": {
+    "start": "Start", "next": "Next group", "previous": "Previous group", "step": "Group {{n}} of {{total}}", "finish": "See all groups", "finalTitle": "Final groups",
+    "drawing": "Drawing…", "reveal": "Reveal group", "restart": "Start over", "goTo": "Go to group"
+  },
+  "select": { "count": "How many to select", "pick": "Select", "retain": "Keep selected names in the list", "removeSelected": "Remove selected names from the list", "selectAgain": "Select again", "selected": "Selected" },
+  "result": { "title": "Result", "winners": "Winners", "copyText": "Copy results", "excel": "Excel", "pdf": "PDF", "local": "Saved on this device only", "exportDisabled": "This export is turned off." },
+  "history": { "title": "Recent results", "empty": "Your results will appear here", "clearAll": "Clear history", "deleted": "Deleted", "confirmClear": "Delete all of your saved results on this device?", "open": "Open", "notFound": "This result is no longer on this device." },
+  "errors": {
+    "too_few": "Add more names first.", "too_many": "Too many names for one spin.", "invalid_config": "Check the settings and try again.", "invalid_tool": "Unknown tool.",
+    "tool_disabled": "This tool is turned off right now.", "maintenance": "Down for maintenance. Please come back soon.", "rate_limited": "Too many requests. Wait a moment and try again.",
+    "generic": "Something went wrong. Please try again.", "not_configured": "Supabase is not configured. Add your keys to the .env file.", "exportOff": "This export is turned off."
+  },
+  "validation": { "required": "This field is required", "email": "Enter a valid email address", "passwordMin": "Use at least 8 characters", "number": "Enter a whole number", "range": "Value out of range", "match": "Passwords do not match", "color": "Use a hex color like #6C5CE7", "https": "Use an https:// link" },
+  "maintenance": { "title": "We'll be right back", "text": "SPIN is being updated. Please check again shortly." },
+  "report": {
+    "type": "Spin type", "generated": "Generated", "resultId": "Result ID", "participants": "Participants", "groups": "Groups", "group": "Group", "size": "Size", "members": "Members",
+    "name": "Name", "matchups": "Matchups", "matchup": "Matchup", "bye": "BYE", "winners": "Winners", "summary": "Summary", "footer": "Generated with SPIN", "page": "Page"
+  },
+  "admin": {
+    "nav": { "overview": "Overview", "activities": "Activities", "results": "Spin Results", "sessions": "Visitors & Sessions", "exports": "Exports", "analytics": "Analytics", "settings": "Website Settings", "backup": "Backup & Restore", "profile": "Admin Profile" },
+    "logout": "Log out", "menu": "Menu", "notConfigured": "Supabase is not configured, so the dashboard has no data source. Copy .env.example to .env and add your project keys.",
+    "login": { "title": "Admin sign in", "email": "Email", "password": "Password", "submit": "Sign in", "forgot": "Forgot password?", "sent": "If that email belongs to an admin, a reset link is on its way.", "notAdmin": "This account is not an administrator.", "error": "Wrong email or password.", "backToSite": "Back to website" },
+    "reset": { "title": "Set a new password", "newPassword": "New password", "confirm": "Confirm password", "save": "Update password", "done": "Password updated" },
+    "cards": { "visitors": "Anonymous browsers", "sessions": "Sessions", "spins": "Spins", "groups": "Groups generated", "matchups": "Team matchups", "winners": "Winners selected", "pdf": "PDF exports", "excel": "Excel exports", "active": "Active sessions" },
+    "visitorsNote": "Anonymous browsers are counted by a random id kept in the browser. One number does not equal one real person.",
+    "charts": { "daily": "Daily activity (30 days)", "weekly": "Weekly activity (12 weeks)", "monthly": "Monthly activity (12 months)", "distribution": "Spins by tool", "exports": "Exports by format", "visitors": "Sessions over time", "activities": "Activities", "sessions": "Sessions", "spins": "Spins", "exportsLabel": "Exports" },
+    "recent": "Recent activity", "failedBackups": "{{count}} backup(s) failed in the last 7 days. Open Backup & Restore for details.",
+    "table": { "id": "ID", "session": "Session", "type": "Type", "entity": "Entity", "time": "Time", "details": "Details", "status": "Status", "search": "Search…", "allTypes": "All types", "exportReport": "Export report", "noRows": "No records match", "rows": "rows" },
+    "activities": { "title": "Activities", "success": "Success", "failed": "Failed", "info": "Info" },
+    "results": { "title": "Spin Results", "tool": "Tool", "participants": "Participants", "groups": "Groups", "matchups": "Matchups", "winners": "Winners", "exports": "Exports", "detail": "Result details", "allTools": "All tools" },
+    "sessions": { "title": "Visitors & Sessions", "created": "Started", "lastActivity": "Last activity", "pages": "Pages", "spins": "Spins", "exports": "Exports", "active": "Active", "ended": "Ended", "pagesVisited": "Pages visited" },
+    "exports": { "title": "Exports", "format": "Format", "result": "Result", "created": "Created", "allFormats": "All formats" },
+    "analytics": { "title": "Analytics" },
+    "settings": {
+      "title": "Website Settings", "general": "General", "tools": "Spin tools", "appearance": "Appearance", "features": "Features", "system": "System",
+      "name": "Website name", "logo": "Logo", "favicon": "Favicon", "description": "Website description", "headline": "Homepage headline", "subtitle": "Homepage subtitle", "upload": "Upload image",
+      "defaultTheme": "Default theme", "themeSystem": "Follow system", "allowLight": "Allow light mode", "allowDark": "Allow dark mode", "primaryColor": "Primary accent color",
+      "sound": "Sound effects", "animations": "Animations", "excel": "Excel exports", "pdf": "PDF exports", "maintenance": "Maintenance mode",
+      "activityRetentionDays": "Keep activity logs (days, 0 = forever)", "sessionRetentionDays": "Keep sessions (days, 0 = forever)", "resultsRetentionDays": "Keep results (days, 0 = forever)",
+      "maxParticipants": "Max participants per spin", "maxNameLength": "Max characters per name", "saved": "Settings saved", "oneThemeRequired": "Allow at least one theme"
+    },
+    "backup": {
+      "title": "Backup & Restore", "create": "Create backup now", "creating": "Creating backup…", "history": "Backup history", "kind": "Type", "size": "Size", "created": "Created", "location": "Storage", "integrity": "Integrity",
+      "manual": "Manual", "daily": "Daily", "weekly": "Weekly", "safety": "Safety", "verified": "Verified", "unverified": "Not verified", "integrityFailed": "Failed", "running": "Running", "completed": "Completed",
+      "schedule": "Automatic backups", "dailyOn": "Daily backup (every 24 hours)", "weeklyOn": "Weekly backup (every 7 days)", "retention": "Keep backups for", "days30": "30 days", "days90": "90 days", "days180": "180 days", "days365": "1 year", "forever": "Indefinitely",
+      "notifyEmail": "Email for failure alerts (optional)", "settingsSaved": "Backup settings saved", "encrypted": "Encrypted", "notEncrypted": "Not encrypted — set BACKUP_ENCRYPTION_KEY", "detail": "Backup details", "contents": "Contents",
+      "restoreTitle": "Restore this backup?", "restoreWarn": "This replaces all application data (results, sessions, activities, settings) with the contents of this backup. A safety backup is created first, and the restore is rolled back automatically if anything fails.",
+      "typeRestore": "Type RESTORE to confirm", "restoring": "Restoring…", "restored": "Restore completed", "restoreFailed": "Restore failed. Production data was not changed.", "step": { "integrity": "Integrity verified", "compatibility": "Compatibility checked", "confirmation": "Confirmed", "safety_backup": "Safety backup created", "restore_and_validate": "Restored and validated", "failed": "Failed" },
+      "confirmDelete": "Delete the selected backups permanently?", "deleted": "Backups deleted", "download": "Download", "verifyNow": "Verify", "verifyOk": "Integrity verified", "verifyBad": "Integrity check failed", "failedBackup": "A backup failed", "failedHint": "See the error below, fix it, and run a manual backup.", "selected": "selected", "none": "No backups yet", "indefinite": "Never expires", "expires": "Expires", "schemaVersion": "Schema version"
+    },
+    "profile": { "title": "Admin Profile", "email": "Email", "role": "Role", "admin": "Administrator", "changePassword": "Change password", "passwordUpdated": "Password updated" }
+  }
+}

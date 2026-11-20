@@ -1,0 +1,92 @@
+{
+  "common": {
+    "back": "Dib u noqo", "add": "Ku dar", "remove": "Ka saar", "edit": "Wax ka beddel", "save": "Kaydi isbeddellada", "cancel": "Jooji", "delete": "Tirtir",
+    "clear": "Nadiifi dhammaan", "copy": "Koobi", "copied": "Waa la koobiyeeyay", "reset": "Dib u deji", "regenerate": "Mar kale samee", "close": "Xidh",
+    "loading": "Waa la rarayaa…", "search": "Raadi", "noData": "Wax halkan ma jiraan", "confirm": "Xaqiiji", "export": "Dhoofi", "download": "Soo deji",
+    "print": "Daabac", "language": "Luuqad", "theme": "Muuqaal", "light": "Iftiin", "dark": "Mugdi", "all": "Dhammaan", "details": "Faahfaahin",
+    "status": "Xaalad", "date": "Taariikh", "type": "Nooc", "from": "Laga bilaabo", "to": "Ilaa", "page": "Bog", "of": "ee", "next": "Xiga",
+    "previous": "Hore", "retry": "Isku day mar kale", "saved": "La kaydiyay", "failed": "Waa fashilantay", "yes": "Haa", "no": "Maya", "enabled": "Shaqeynaya",
+    "disabled": "La joojiyay", "open": "Fur", "on": "Daaran", "off": "Dansan", "restore": "Soo celi", "create": "Samee", "verify": "Hubi"
+  },
+  "nav": { "home": "Bogga Hore", "tools": "Qalabka Wareegga", "history": "Taariikh" },
+  "hero": { "title": "Ka dhig doorasho kasta mid random ah.", "subtitle": "Wareeji, dooro, isku xidh, oo samee kooxo si fudud.", "cta": "Bilow wareegga" },
+  "tools": {
+    "wheel": { "name": "Giraanta Random", "desc": "Wareeji si aad u doorato guuleyste" },
+    "teams": { "name": "Isku Xidhka Kooxaha", "desc": "Kooxaha si random ah isugu xidh" },
+    "groups": { "name": "Samaynta Kooxo", "desc": "Dadka ku qaybi kooxo" },
+    "groupspin": { "name": "Koox-Koox Wareeji", "desc": "Kooxaha mid mid u muuji" },
+    "select": { "name": "Qof Random ah", "desc": "Liis ka dooro dad" },
+    "disabled": "Qalabkan hadda waa la joojiyay."
+  },
+  "input": {
+    "placeholder": "Magac ku dar oo taabo Enter", "paste": "Halkan ku dheji magacyo — mid sadar kasta ama koma kala saar", "addAll": "Ku dar magacyada",
+    "importCsv": "Soo geli CSV", "count_one": "{{count}} ka qaybgale", "count_other": "{{count}} ka qaybgale", "duplicates": "{{count}} magac oo la mid ah ayaa laga saaray",
+    "tooLong": "Magacyada qaar waxaa loo gaabiyay {{max}} xaraf", "limit": "Xadka waa la gaaray: {{max}} ka qaybgale", "empty": "Magacyo ku dar si aad u bilowdo",
+    "editPrompt": "Magaca wax ka beddel", "imported": "{{count}} magac ayaa la soo geliyay", "sample": "Ku dar magacyo tusaale ah"
+  },
+  "wheel": {
+    "spin": "Wareeji", "spinning": "Waa wareegayaa…", "winners": "Guuleystayaal", "removeWinners": "Guuleystayaasha ka saar giraanta", "keepWinners": "Guuleystayaasha ku hay giraanta",
+    "sound": "Codka", "fullscreen": "Shaashad buuxda", "exitFullscreen": "Ka bax shaashadda buuxda", "winner": "Guuleyste", "needTwo": "Ku dar ugu yaraan 2 magac si aad u wareejiso",
+    "spinAgain": "Mar kale wareeji", "resetWheel": "Dib u deji giraanta"
+  },
+  "teams": {
+    "perMatch": "Kooxo ciyaar kasta", "oneVsOne": "1 ka dhan 1", "nWay": "{{n}} koox", "generate": "Isku xidh kooxaha", "revealOne": "Mid mid u muuji",
+    "revealAll": "Dhammaan muuji", "next": "Muuji kan xiga", "needTwo": "Ku dar ugu yaraan 2 koox", "placeholder": "Koox ku dar oo taabo Enter", "vs": "la ciyaaraya"
+  },
+  "groups": {
+    "by": "Ku qaybi", "size": "Tirada koox kasta", "count": "Tirada kooxaha", "value": "Qiimo", "generate": "Samee kooxo", "members": "xubnood", "group": "Koox",
+    "needOne": "Ku dar ugu yaraan 1 magac", "summary": "{{groups}} koox · {{people}} qof"
+  },
+  "groupspin": {
+    "start": "Bilow", "next": "Kooxda xigta", "previous": "Kooxda hore", "step": "Koox {{n}} ee {{total}}", "finish": "Arag dhammaan kooxaha", "finalTitle": "Kooxaha ugu dambeeya",
+    "drawing": "Waa la doorayaa…", "reveal": "Muuji kooxda", "restart": "Dib u bilow", "goTo": "Tag kooxda"
+  },
+  "select": { "count": "Imisa ayaad dooranaysaa", "pick": "Dooro", "retain": "Magacyada la doortay ku hay liiska", "removeSelected": "Magacyada la doortay ka saar liiska", "selectAgain": "Mar kale dooro", "selected": "La doortay" },
+  "result": { "title": "Natiijo", "winners": "Guuleystayaal", "copyText": "Koobi natiijooyinka", "excel": "Excel", "pdf": "PDF", "local": "Waxaa lagu kaydiyay qalabkan oo keliya", "exportDisabled": "Dhoofintan waa la joojiyay." },
+  "history": { "title": "Natiijooyinkii ugu dambeeyay", "empty": "Natiijooyinkaagu halkan ayay ka muuqan doonaan", "clearAll": "Nadiifi taariikhda", "deleted": "Waa la tirtiray", "confirmClear": "Ma tirtirtaa dhammaan natiijooyinka qalabkan ku kaydsan?", "open": "Fur", "notFound": "Natiijadan qalabkan kuma jirto mar dambe." },
+  "errors": {
+    "too_few": "Marka hore magacyo dheeraad ah ku dar.", "too_many": "Magacyo aad u badan hal wareeg.", "invalid_config": "Hubi dejinta oo isku day mar kale.", "invalid_tool": "Qalab aan la aqoon.",
+    "tool_disabled": "Qalabkan hadda waa la joojiyay.", "maintenance": "Goobtu waa dayactir. Fadlan dhawaan soo noqo.", "rate_limited": "Codsiyo aad u badan. Wax yar sug oo isku day mar kale.",
+    "generic": "Wax khalad ah ayaa dhacay. Fadlan isku day mar kale.", "not_configured": "Supabase lama dejin. Furayaasha ku dar faylka .env.", "exportOff": "Dhoofintan waa la joojiyay."
+  },
+  "validation": { "required": "Goobtan waa lagama maarmaan", "email": "Geli iimayl sax ah", "passwordMin": "Isticmaal ugu yaraan 8 xaraf", "number": "Geli tiro dhan", "range": "Qiimuhu wuu ka baxsan yahay xadka", "match": "Erayada sirta ah isma laha", "color": "Isticmaal midab hex ah sida #6C5CE7", "https": "Isticmaal xiriiriye https:// ah" },
+  "maintenance": { "title": "Dhaqso ayaan soo noqonaa", "text": "SPIN waa la cusboonaysiinayaa. Fadlan dhawaan mar kale hubi." },
+  "report": {
+    "type": "Nooca wareegga", "generated": "La sameeyay", "resultId": "Aqoonsiga natiijada", "participants": "Ka qaybgalayaal", "groups": "Kooxo", "group": "Koox", "size": "Cabbir", "members": "Xubnaha",
+    "name": "Magac", "matchups": "Isku xidhyo", "matchup": "Isku xidh", "bye": "BYE", "winners": "Guuleystayaal", "summary": "Soo koobid", "footer": "Waxaa lagu sameeyay SPIN", "page": "Bog"
+  },
+  "admin": {
+    "nav": { "overview": "Guudmar", "activities": "Hawlaha", "results": "Natiijooyinka", "sessions": "Booqdayaal & Fadhiyo", "exports": "Dhoofinta", "analytics": "Falanqeyn", "settings": "Dejinta Shabakadda", "backup": "Kaydka & Soo Celinta", "profile": "Astaanta Maamulaha" },
+    "logout": "Ka bax", "menu": "Liiska", "notConfigured": "Supabase lama dejin, sidaas darteed dashboard-ku ma haysto ilo xog ah. Koobi .env.example una beddel .env oo ku dar furayaasha mashruucaaga.",
+    "login": { "title": "Gelitaanka maamulaha", "email": "Iimayl", "password": "Erayga sirta ah", "submit": "Gal", "forgot": "Ma illowday erayga sirta ah?", "sent": "Haddii iimaylkaasi leeyahay maamule, xiriiriye dib u dejin ayaa laguu soo dirayaa.", "notAdmin": "Akoonkan maaha maamule.", "error": "Iimayl ama erayga sirta ah waa khalad.", "backToSite": "Ku noqo shabakadda" },
+    "reset": { "title": "Deji erayga sirta ah ee cusub", "newPassword": "Erayga sirta ah ee cusub", "confirm": "Xaqiiji erayga sirta ah", "save": "Cusboonaysii erayga sirta ah", "done": "Erayga sirta ah waa la cusboonaysiiyay" },
+    "cards": { "visitors": "Browser-yo qarsoon", "sessions": "Fadhiyo", "spins": "Wareegyo", "groups": "Kooxo la sameeyay", "matchups": "Isku xidhyada kooxaha", "winners": "Guuleystayaal la doortay", "pdf": "Dhoofinta PDF", "excel": "Dhoofinta Excel", "active": "Fadhiyo firfircoon" },
+    "visitorsNote": "Browser-yada qarsoon waxaa lagu tiriyaa aqoonsi random ah oo ku jira browser-ka. Hal tiro ma aha hal qof dhab ah.",
+    "charts": { "daily": "Hawlaha maalinlaha ah (30 maalmood)", "weekly": "Hawlaha toddobaadlaha ah (12 toddobaad)", "monthly": "Hawlaha bishii (12 bilood)", "distribution": "Wareegyada qalab kasta", "exports": "Dhoofinta qaab kasta", "visitors": "Fadhiyada waqtiga ka dib", "activities": "Hawlo", "sessions": "Fadhiyo", "spins": "Wareegyo", "exportsLabel": "Dhoofin" },
+    "recent": "Hawlihii ugu dambeeyay", "failedBackups": "{{count}} kayd ayaa fashilmay 7-dii maalmood ee la soo dhaafay. Fur Kaydka & Soo Celinta si aad u aragto faahfaahin.",
+    "table": { "id": "ID", "session": "Fadhi", "type": "Nooc", "entity": "Walax", "time": "Waqti", "details": "Faahfaahin", "status": "Xaalad", "search": "Raadi…", "allTypes": "Dhammaan noocyada", "exportReport": "Dhoofi warbixin", "noRows": "Diiwaan ma jiro", "rows": "safaf" },
+    "activities": { "title": "Hawlaha", "success": "Guul", "failed": "Fashil", "info": "Macluumaad" },
+    "results": { "title": "Natiijooyinka Wareegga", "tool": "Qalab", "participants": "Ka qaybgalayaal", "groups": "Kooxo", "matchups": "Isku xidhyo", "winners": "Guuleystayaal", "exports": "Dhoofin", "detail": "Faahfaahinta natiijada", "allTools": "Dhammaan qalabka" },
+    "sessions": { "title": "Booqdayaal & Fadhiyo", "created": "Bilowday", "lastActivity": "Hawshii ugu dambaysay", "pages": "Boggag", "spins": "Wareegyo", "exports": "Dhoofin", "active": "Firfircoon", "ended": "Dhammaaday", "pagesVisited": "Boggagga la booqday" },
+    "exports": { "title": "Dhoofinta", "format": "Qaab", "result": "Natiijo", "created": "La sameeyay", "allFormats": "Dhammaan qaababka" },
+    "analytics": { "title": "Falanqeyn" },
+    "settings": {
+      "title": "Dejinta Shabakadda", "general": "Guud", "tools": "Qalabka wareegga", "appearance": "Muuqaal", "features": "Astaamo", "system": "Nidaam",
+      "name": "Magaca shabakadda", "logo": "Astaanta", "favicon": "Favicon", "description": "Sharaxaadda shabakadda", "headline": "Cinwaanka bogga hore", "subtitle": "Cinwaanka hoose ee bogga hore", "upload": "Soo rar sawir",
+      "defaultTheme": "Muuqaalka caadiga ah", "themeSystem": "Raac nidaamka", "allowLight": "Ogolow muuqaalka iftiinka", "allowDark": "Ogolow muuqaalka mugdiga", "primaryColor": "Midabka ugu muhiimsan",
+      "sound": "Codadka", "animations": "Dhaqdhaqaaq", "excel": "Dhoofinta Excel", "pdf": "Dhoofinta PDF", "maintenance": "Habka dayactirka",
+      "activityRetentionDays": "Hay diiwaanka hawlaha (maalmo, 0 = weligeed)", "sessionRetentionDays": "Hay fadhiyada (maalmo, 0 = weligeed)", "resultsRetentionDays": "Hay natiijooyinka (maalmo, 0 = weligeed)",
+      "maxParticipants": "Ugu badnaan ka qaybgale wareeg kasta", "maxNameLength": "Ugu badnaan xaraf magac kasta", "saved": "Dejinta waa la kaydiyay", "oneThemeRequired": "Ogolow ugu yaraan hal muuqaal"
+    },
+    "backup": {
+      "title": "Kaydka & Soo Celinta", "create": "Samee kayd hadda", "creating": "Kaydka waa la samaynayaa…", "history": "Taariikhda kaydka", "kind": "Nooc", "size": "Cabbir", "created": "La sameeyay", "location": "Meesha lagu kaydiyay", "integrity": "Hubinta",
+      "manual": "Gacanta", "daily": "Maalinle", "weekly": "Toddobaadle", "safety": "Badbaado", "verified": "La hubiyay", "unverified": "Lama hubin", "integrityFailed": "Waa fashilantay", "running": "Socda", "completed": "Dhammaaday",
+      "schedule": "Kaydka toos ah", "dailyOn": "Kayd maalinle (24 saacadood kasta)", "weeklyOn": "Kayd toddobaadle (7 maalmood kasta)", "retention": "Hay kaydka", "days30": "30 maalmood", "days90": "90 maalmood", "days180": "180 maalmood", "days365": "1 sano", "forever": "Weligeed",
+      "notifyEmail": "Iimayl ogeysiis fashil (ikhtiyaari)", "settingsSaved": "Dejinta kaydka waa la kaydiyay", "encrypted": "Waa la sir-celiyay", "notEncrypted": "Lama sir-celin — deji BACKUP_ENCRYPTION_KEY", "detail": "Faahfaahinta kaydka", "contents": "Waxa ku jira",
+      "restoreTitle": "Ma soo celisaa kaydkan?", "restoreWarn": "Tani waxay beddeshaa dhammaan xogta barnaamijka (natiijooyin, fadhiyo, hawlo, dejin) waxa ku jira kaydkan. Marka hore waxaa la sameeyaa kayd badbaado, haddii wax fashilmana soo celintu si toos ah ayay dib ugu noqotaa.",
+      "typeRestore": "Qor RESTORE si aad u xaqiijiso", "restoring": "Waa la soo celinayaa…", "restored": "Soo celintu way dhammaatay", "restoreFailed": "Soo celintu way fashilantay. Xogta shaqeynaysa lama beddelin.", "step": { "integrity": "Hubinta waa la sameeyay", "compatibility": "Isku-dhiggu waa la hubiyay", "confirmation": "La xaqiijiyay", "safety_backup": "Kaydka badbaadada waa la sameeyay", "restore_and_validate": "La soo celiyay oo la hubiyay", "failed": "Waa fashilantay" },
+      "confirmDelete": "Ma si joogto ah ayaad u tirtirtaa kaydadka la doortay?", "deleted": "Kaydadka waa la tirtiray", "download": "Soo deji", "verifyNow": "Hubi", "verifyOk": "Hubintu waa guulaysatay", "verifyBad": "Hubintu waa fashilantay", "failedBackup": "Kayd ayaa fashilmay", "failedHint": "Eeg khaladka hoose, hagaaji, oo samee kayd gacanta ah.", "selected": "la doortay", "none": "Wali kayd ma jiro", "indefinite": "Ma dhacayo", "expires": "Wuu dhacayaa", "schemaVersion": "Nooca nidaamka"
+    },
+    "profile": { "title": "Astaanta Maamulaha", "email": "Iimayl", "role": "Doorka", "admin": "Maamule", "changePassword": "Beddel erayga sirta ah", "passwordUpdated": "Erayga sirta ah waa la cusboonaysiiyay" }
+  }
+}
