@@ -1,0 +1,3 @@
+-- Optional seed. Default settings are created by migration 0003.
+-- Admin provisioning is NOT done here (no credentials in source control).
+-- After creating the admin user in Supabase Auth, run:  select public.provision_admin('you@example.com');
