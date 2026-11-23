@@ -26,7 +26,8 @@
   },
   "wheel": {
     "spin": "Wareeji", "spinning": "Waa wareegayaa…", "winners": "Guuleystayaal", "removeWinners": "Guuleystayaasha ka saar giraanta", "keepWinners": "Guuleystayaasha ku hay giraanta",
-    "sound": "Codka", "fullscreen": "Shaashad buuxda", "exitFullscreen": "Ka bax shaashadda buuxda", "winner": "Guuleyste", "needTwo": "Ku dar ugu yaraan 2 magac si aad u wareejiso",
+    "sound": "Codka", "volumeUp": "Codka kordhi", "volumeDown": "Codka yaree", "fullscreen": "Shaashad buuxda", "exitFullscreen": "Ka bax shaashadda buuxda",
+    "winner": "Guuleyste", "congrats": "Hambalyo!", "needTwo": "Ku dar ugu yaraan 2 magac si aad u wareejiso",
     "spinAgain": "Mar kale wareeji", "resetWheel": "Dib u deji giraanta"
   },
   "teams": {

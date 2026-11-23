@@ -26,7 +26,8 @@
   },
   "wheel": {
     "spin": "Spin", "spinning": "Spinning…", "winners": "Winners", "removeWinners": "Remove winners from the wheel", "keepWinners": "Keep winners on the wheel",
-    "sound": "Sound", "fullscreen": "Fullscreen", "exitFullscreen": "Exit fullscreen", "winner": "Winner", "needTwo": "Add at least 2 names to spin",
+    "sound": "Sound", "volumeUp": "Louder", "volumeDown": "Quieter", "fullscreen": "Fullscreen", "exitFullscreen": "Exit fullscreen",
+    "winner": "Winner", "congrats": "Congratulations!", "needTwo": "Add at least 2 names to spin",
     "spinAgain": "Spin again", "resetWheel": "Reset wheel"
   },
   "teams": {
