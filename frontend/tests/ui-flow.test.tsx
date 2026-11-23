@@ -8,7 +8,6 @@ import { SettingsProvider } from '../src/hooks/useSettings';
 import { ToastProvider } from '../src/hooks/useToast';
 import GroupGenerator from '../src/features/group-generator/GroupGenerator';
 import TeamMatching from '../src/features/team-matching/TeamMatching';
-import RandomSelection from '../src/features/random-selection/RandomSelection';
 import Home from '../src/pages/public/Home';
 import { ThemeToggle } from '../src/components/ThemeToggle';
 
@@ -41,19 +40,10 @@ describe('end-to-end UI flows (jsdom)', () => {
     await click(btn(/add names/i)); await click(btn(/match teams/i));
     expect(box.textContent).toContain('BYE');
   });
-  it('Random Selection: picks the requested number of distinct winners', async () => {
-    await mount(<RandomSelection />);
-    await type(box.querySelector('textarea')!, 'A\nB\nC\nD\nE\nF');
-    await click(btn(/add names/i));
-    const count = box.querySelector('#sc') as HTMLInputElement;
-    await act(async () => { Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!.call(count, '3'); count.dispatchEvent(new Event('input', { bubbles: true })); });
-    await act(async () => { btn(/^select$/i).click(); await new Promise((r) => setTimeout(r, 2200)); });
-    expect(box.querySelectorAll('.card .text-lg.font-extrabold').length).toBe(3);
-  }, 10000);
   it('Home renders the headline in English and Somali; theme toggle flips the dark class', async () => {
     await mount(<><Home /><ThemeToggle /></>);
     expect(box.textContent).toContain('Make Every Choice Random.');
-    expect(box.querySelectorAll('a[href^="/tools/"]').length).toBe(5);
+    expect(box.querySelectorAll('a[href^="/tools/"]').length).toBe(3);
     await act(async () => { await i18n.changeLanguage('so'); });
     expect(box.textContent).toContain('Ka dhig doorasho kasta mid random ah.');
     await act(async () => { await i18n.changeLanguage('en'); });

@@ -24,11 +24,11 @@ describe('browser history + local fallback (Supabase not configured)', () => {
   });
   it('rejects invalid input with a typed error', async () => { await expect(runSpin('wheel', ['only'], {})).rejects.toBeInstanceOf(SpinError); });
   it('deletes one record and clears all', async () => {
-    const a = await runSpin('select', ['a', 'b'], { winners: 1 }); const b = await runSpin('select', ['a', 'b'], { winners: 1 });
+    const a = await runSpin('wheel', ['a', 'b'], { winners: 1 }); const b = await runSpin('wheel', ['a', 'b'], { winners: 1 });
     deleteHistory(a.id); expect(listHistory().map((x) => x.id)).toEqual([b.id]); clearHistory(); expect(listHistory()).toEqual([]);
   });
   it('winner removal: removing winners from the list leaves the others', () => {
     const list = ['a', 'b', 'c', 'd']; const winners = ['b', 'd']; expect(list.filter((x) => !winners.includes(x))).toEqual(['a', 'c']);
   });
-  it('history is capped', () => { for (let i = 0; i < 120; i++) addHistory({ id: String(i), tool: 'select', createdAt: '', participants: [], config: {}, output: {} }); expect(listHistory().length).toBe(100); });
+    it('history is capped', () => { for (let i = 0; i < 120; i++) addHistory({ id: String(i), tool: 'wheel', createdAt: '', participants: [], config: {}, output: {} }); expect(listHistory().length).toBe(100); });
 });

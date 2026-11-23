@@ -14,8 +14,6 @@
     "wheel": { "name": "Giraanta Random", "desc": "Wareeji si aad u doorato guuleyste" },
     "teams": { "name": "Isku Xidhka Kooxaha", "desc": "Kooxaha si random ah isugu xidh" },
     "groups": { "name": "Samaynta Kooxo", "desc": "Dadka ku qaybi kooxo" },
-    "groupspin": { "name": "Koox-Koox Wareeji", "desc": "Kooxaha mid mid u muuji" },
-    "select": { "name": "Qof Random ah", "desc": "Liis ka dooro dad" },
     "disabled": "Qalabkan hadda waa la joojiyay."
   },
   "input": {
@@ -38,11 +36,6 @@
     "by": "Ku qaybi", "size": "Tirada koox kasta", "count": "Tirada kooxaha", "value": "Qiimo", "generate": "Samee kooxo", "members": "xubnood", "group": "Koox",
     "needOne": "Ku dar ugu yaraan 1 magac", "summary": "{{groups}} koox · {{people}} qof"
   },
-  "groupspin": {
-    "start": "Bilow", "next": "Kooxda xigta", "previous": "Kooxda hore", "step": "Koox {{n}} ee {{total}}", "finish": "Arag dhammaan kooxaha", "finalTitle": "Kooxaha ugu dambeeya",
-    "drawing": "Waa la doorayaa…", "reveal": "Muuji kooxda", "restart": "Dib u bilow", "goTo": "Tag kooxda"
-  },
-  "select": { "count": "Imisa ayaad dooranaysaa", "pick": "Dooro", "retain": "Magacyada la doortay ku hay liiska", "removeSelected": "Magacyada la doortay ka saar liiska", "selectAgain": "Mar kale dooro", "selected": "La doortay" },
   "result": { "title": "Natiijo", "winners": "Guuleystayaal", "copyText": "Koobi natiijooyinka", "excel": "Excel", "pdf": "PDF", "local": "Waxaa lagu kaydiyay qalabkan oo keliya", "exportDisabled": "Dhoofintan waa la joojiyay." },
   "history": { "title": "Natiijooyinkii ugu dambeeyay", "empty": "Natiijooyinkaagu halkan ayay ka muuqan doonaan", "clearAll": "Nadiifi taariikhda", "deleted": "Waa la tirtiray", "confirmClear": "Ma tirtirtaa dhammaan natiijooyinka qalabkan ku kaydsan?", "open": "Fur", "notFound": "Natiijadan qalabkan kuma jirto mar dambe." },
   "errors": {

@@ -67,7 +67,7 @@ function General({ v }: { v: any }) {
 function Tools({ v }: { v: any }) {
   const { t } = useTranslation(); const { save, saving } = useSave('tools');
   const f = useForm({ values: v });
-  return <Section title={t('admin.settings.tools')} saving={saving} onSubmit={f.handleSubmit(save)}>{(['wheel', 'teams', 'groups', 'groupspin', 'select'] as const).map((k) => <Switch key={k} label={t(`tools.${k}.name`)} reg={f.register(k)} />)}</Section>;
+  return <Section title={t('admin.settings.tools')} saving={saving} onSubmit={f.handleSubmit((d) => save({ wheel: d.wheel, teams: d.teams, groups: d.groups }))}>{(['wheel', 'teams', 'groups'] as const).map((k) => <Switch key={k} label={t(`tools.${k}.name`)} reg={f.register(k)} />)}</Section>;
 }
 
 function Appearance({ v }: { v: any }) {

@@ -33,7 +33,7 @@ describe('winner selection', () => {
     c.forEach((x) => expect(Math.abs(x - N / 5)).toBeLessThan(N / 5 * 0.1));
   });
   it('winners array matches winnerIndexes', () => {
-    const p = names(8); const o = computeOutput('select', p, { winners: 3 });
+    const p = names(8); const o = computeOutput('wheel', p, { winners: 3 });
     expect(o.winners).toEqual(o.winnerIndexes!.map((i) => p[i]));
   });
 });
@@ -77,11 +77,13 @@ describe('input handling', () => {
 describe('server-side request validation', () => {
   it('rejects bad tools, too few and too many', () => {
     expect(validateRequest('nope', ['a', 'b'], {}).ok).toBe(false);
+    expect(validateRequest('select', names(5), { winners: 1 })).toMatchObject({ ok: false, error: 'invalid_tool' });
+    expect(validateRequest('groupspin', names(5), { mode: 'size', value: 2 })).toMatchObject({ ok: false, error: 'invalid_tool' });
     expect(validateRequest('wheel', ['a'], {})).toMatchObject({ ok: false, error: 'too_few' });
     expect(validateRequest('groups', names(600), { mode: 'size', value: 4 })).toMatchObject({ ok: false, error: 'too_many' });
   });
   it('rejects invalid config and accepts valid', () => {
-    expect(validateRequest('select', names(5), { winners: 9 })).toMatchObject({ ok: false, error: 'invalid_config' });
+    expect(validateRequest('wheel', names(5), { winners: 9 })).toMatchObject({ ok: false, error: 'invalid_config' });
     expect(validateRequest('groups', names(5), { mode: 'size', value: 0 })).toMatchObject({ ok: false, error: 'invalid_config' });
     expect(validateRequest('teams', names(4), { perMatch: 2 }).ok).toBe(true);
   });

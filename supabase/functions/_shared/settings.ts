@@ -9,7 +9,7 @@ const hex: V = (x) => typeof x === 'string' && /^#[0-9a-fA-F]{6}$/.test(x);
 
 export const SETTINGS_SPEC: Record<string, Record<string, V>> = {
   general: { name: str(60, 1), logoUrl: url, faviconUrl: url, description: str(200), headline: str(80, 1), subtitle: str(160) },
-  tools: { wheel: bool, teams: bool, groups: bool, groupspin: bool, select: bool },
+  tools: { wheel: bool, teams: bool, groups: bool },
   appearance: { defaultTheme: oneOf('system', 'light', 'dark'), allowLight: bool, allowDark: bool, primaryColor: hex },
   features: { sound: bool, animations: bool, excel: bool, pdf: bool },
   system: {

@@ -1,7 +1,7 @@
 // SPIN randomization engine. Pure TypeScript, WebCrypto only.
 // SINGLE SOURCE: supabase/functions/_shared/engine.ts  (copied to frontend/src/lib/shared by scripts/sync-shared.sh)
-export type Tool = 'wheel' | 'teams' | 'groups' | 'groupspin' | 'select';
-export const TOOLS: Tool[] = ['wheel', 'teams', 'groups', 'groupspin', 'select'];
+export type Tool = 'wheel' | 'teams' | 'groups';
+export const TOOLS: Tool[] = ['wheel', 'teams', 'groups'];
 export interface Match { teams: string[]; bye?: boolean }
 export interface SpinOutput {
   winners?: string[];
@@ -107,7 +107,7 @@ export function validateRequest(tool: string, raw: unknown, cfg: SpinConfig | un
   const c = cfg ?? {};
   const posInt = (v: unknown, lo: number, hi: number) => Number.isInteger(v) && (v as number) >= lo && (v as number) <= hi;
   const config: SpinConfig = {};
-  if (tool === 'wheel' || tool === 'select') {
+  if (tool === 'wheel') {
     const w = c.winners ?? 1;
     if (!posInt(w, 1, Math.min(list.length, 100))) return { ok: false, error: 'invalid_config' };
     config.winners = w;
@@ -126,13 +126,11 @@ export function validateRequest(tool: string, raw: unknown, cfg: SpinConfig | un
 
 export function computeOutput(tool: Tool, participants: string[], config: SpinConfig): SpinOutput {
   switch (tool) {
-    case 'wheel':
-    case 'select': {
+    case 'wheel': {
       const idx = pickDistinctIndexes(participants.length, config.winners ?? 1);
       return { winnerIndexes: idx, winners: idx.map((i) => participants[i]) };
     }
     case 'teams': return { matches: makeMatches(participants, config.perMatch ?? 2) };
-    case 'groups':
-    case 'groupspin': return { groups: splitIntoGroups(participants, config.mode ?? 'size', config.value ?? 2) };
+    case 'groups': return { groups: splitIntoGroups(participants, config.mode ?? 'size', config.value ?? 2) };
   }
 }

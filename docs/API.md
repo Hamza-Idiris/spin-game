@@ -5,10 +5,10 @@ Base URL: `https://<ref>.supabase.co/functions/v1/<name>` · headers: `apikey` +
 ## `spin-submit` (public)
 Chooses the result **on the server** with a CSPRNG (Fisher–Yates + rejection sampling) and stores it.
 ```json
-{ "tool": "wheel|teams|groups|groupspin|select", "participants": ["Ann","Bob"], "config": {"winners":1},
+{ "tool": "wheel|teams|groups", "participants": ["Ann","Bob"], "config": {"winners":1},
   "sessionId": "<uuid>", "visitorId": "<uuid>", "eventId": "<uuid>" }
 ```
-Config: wheel/select `{winners}` · teams `{perMatch}` · groups/groupspin `{mode:"size"|"count", value}`.
+Config: wheel `{winners}` · teams `{perMatch}` · groups `{mode:"size"|"count", value}`.
 Returns `{ resultId, participants, config, output }`; `output` = `{winners,winnerIndexes}` | `{groups}` | `{matches}`.
 Errors: `bad_request, too_few, too_many, invalid_config, tool_disabled, maintenance (503), rate_limited (429), server_error`.
 The wheel animation lands on `output.winnerIndexes`; the animation never decides the winner.

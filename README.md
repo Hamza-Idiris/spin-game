@@ -1,6 +1,6 @@
 # SPIN — One Platform. Every Random Possibility.
 
-Premium randomization web app: Random Wheel, Team Matching, Group Generator, Group-by-Group Spin, Random Person Selection —
+Premium randomization web app: Random Wheel, Team Matching, and Group Generator —
 with an Admin dashboard (activity, results, sessions, exports, analytics, settings, backup & restore). English + Somali, Light + Dark.
 
 ## Stack
@@ -11,7 +11,7 @@ ExcelJS · jsPDF + AutoTable · Supabase (Auth, Postgres + RLS, Edge Functions, 
 ```bash
 cd frontend && npm install && npm run dev       # http://localhost:5173
 ```
-Without keys all five tools work in **local mode** (results saved in the browser only) and the Admin area shows
+Without keys all three tools work in **local mode** (results saved in the browser only) and the Admin area shows
 "Supabase is not configured". Nothing pretends to be connected.
 
 To connect Supabase: copy `.env.example` → `frontend/.env`, fill the two `VITE_` values, then follow **docs/DEPLOYMENT.md**.
@@ -29,8 +29,6 @@ To connect Supabase: copy `.env.example` → `frontend/.env`, fill the two `VITE
 | Random Wheel | SVG wheel, multi-winner, keep/remove winners, sound toggle, fullscreen |
 | Team Matching | 1v1 or N-way, BYE for odd counts, reveal one-by-one or all |
 | Group Generator | by size or by count, always as even as possible, CSV import, duplicate removal with feedback |
-| Group-by-Group | step-by-step reveal with draw animation, go back, final view |
-| Random Person | N winners, keep/remove selected, select again |
 All: copy, Excel (ExcelJS), PDF (jsPDF), print, local history (open/copy/export/delete/clear).
 
 ## Tests

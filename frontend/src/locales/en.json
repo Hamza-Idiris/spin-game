@@ -14,8 +14,6 @@
     "wheel": { "name": "Random Wheel", "desc": "Spin to pick a winner" },
     "teams": { "name": "Team Matching", "desc": "Pair teams at random" },
     "groups": { "name": "Group Generator", "desc": "Split people into groups" },
-    "groupspin": { "name": "Group-by-Group Spin", "desc": "Reveal groups one at a time" },
-    "select": { "name": "Random Person", "desc": "Pick people from a list" },
     "disabled": "This tool is turned off right now."
   },
   "input": {
@@ -38,11 +36,6 @@
     "by": "Divide by", "size": "Group size", "count": "Number of groups", "value": "Value", "generate": "Generate groups", "members": "members", "group": "Group",
     "needOne": "Add at least 1 name", "summary": "{{groups}} groups · {{people}} people"
   },
-  "groupspin": {
-    "start": "Start", "next": "Next group", "previous": "Previous group", "step": "Group {{n}} of {{total}}", "finish": "See all groups", "finalTitle": "Final groups",
-    "drawing": "Drawing…", "reveal": "Reveal group", "restart": "Start over", "goTo": "Go to group"
-  },
-  "select": { "count": "How many to select", "pick": "Select", "retain": "Keep selected names in the list", "removeSelected": "Remove selected names from the list", "selectAgain": "Select again", "selected": "Selected" },
   "result": { "title": "Result", "winners": "Winners", "copyText": "Copy results", "excel": "Excel", "pdf": "PDF", "local": "Saved on this device only", "exportDisabled": "This export is turned off." },
   "history": { "title": "Recent results", "empty": "Your results will appear here", "clearAll": "Clear history", "deleted": "Deleted", "confirmClear": "Delete all of your saved results on this device?", "open": "Open", "notFound": "This result is no longer on this device." },
   "errors": {

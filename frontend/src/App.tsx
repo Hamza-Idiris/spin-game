@@ -11,8 +11,6 @@ import ResultPage from './pages/public/ResultPage';
 const RandomWheel = lazy(() => import('./features/random-wheel/RandomWheel'));
 const TeamMatching = lazy(() => import('./features/team-matching/TeamMatching'));
 const GroupGenerator = lazy(() => import('./features/group-generator/GroupGenerator'));
-const GroupSpin = lazy(() => import('./features/group-spin/GroupSpin'));
-const RandomSelection = lazy(() => import('./features/random-selection/RandomSelection'));
 const AdminLayout = lazy(() => import('./layouts/AdminLayout'));
 const Login = lazy(() => import('./pages/admin/Login'));
 const ResetPassword = lazy(() => import('./pages/admin/ResetPassword'));
@@ -40,8 +38,6 @@ export default function App() {
               <Route path="tools/wheel" element={<RandomWheel />} />
               <Route path="tools/teams" element={<TeamMatching />} />
               <Route path="tools/groups" element={<GroupGenerator />} />
-              <Route path="tools/group-spin" element={<GroupSpin />} />
-              <Route path="tools/select" element={<RandomSelection />} />
               <Route path="result/:id" element={<ResultPage />} />
             </Route>
             <Route path="admin/login" element={<Login />} />
